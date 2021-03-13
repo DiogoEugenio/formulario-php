@@ -1,34 +1,17 @@
-<?php
-
-$categoria = [];
-$categoria[] = 'Adulto';
-$categoria[] = 'Adolecentes';
-$categoria[] = 'Infantil';
-//print_r($categoria); Ele imprime na tela se o arrey está usado corretamente.
-
-$nome = 'Eduardo';
-$idade = 15;
-
-//var_dump($nome);
-//var_dump($idade); ele mostra tipo da variavel.
-
-if($idade >= 6 && $idade <= 12)
-{
-       for ($i=0; $i < count($categoria) ; $i++) 
-    
-        if($categoria[$i] == 'infantil');
-            echo "O nadador ".$nome." está na categoria Infantil";
-        
-      
-}
-else if($idade >= 13 && $idade <= 18)
-{
-    for ($i=0; $i < count($categoria) ; $i++) 
-    
-        if($categoria[$i] == 'Adolecentes');
-            echo "O nadador ".$nome." está na categoria Adolecentes";
-}   
-else
-{
-    echo'Categoria: Adulto';
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>FORMULARIO PARA OS COMPETIDORES</p>
+    <form action="script.php" method="post">
+    <p>Seu Nome: <input type="text" name="nome"></p>
+    <p>Sua idade: <input type="text" name="idade"></p>
+    <p><input type="submit"></p>
+    </form>
+</body>
+</html>
